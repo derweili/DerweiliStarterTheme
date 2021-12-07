@@ -1,37 +1,33 @@
 {
   "name": "DerweiliStarterTheme",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "src/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env BABEL_ENV=default NODE_ENV=development webpack --watch",
-    "build": "cross-env BABEL_ENV=default NODE_ENV=production webpack -p"
+    "bootstrap": "wpackio-scripts bootstrap",
+    "build": "wpackio-scripts build",
+    "start": "wpackio-scripts start",
+    "archive": "wpackio-scripts pack"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derweili/DerweiliStarterTheme.git"
+  },
+  "author": "TW Werbeagenten Heidelberg GmbH",
   "license": "ISC",
-  "dependencies": {
-    "@babel/core": "^7.6.0",
-    "autoprefixer": "^9.6.1",
-    "babel-loader": "^8.0.6",
-    "browser-sync": "^2.26.7",
-    "copy-webpack-plugin": "^5.0.4",
-    "cross-env": "^6.0.0",
-    "css-loader": "^3.2.0",
-    "extract-loader": "^3.1.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^4.2.0",
-    "imagemin-webpack-plugin": "^2.4.2",
-    "node-sass": "^4.12.0",
-    "postcss-loader": "^3.0.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "sass-loader": "^8.0.0",
-    "webpack": "^4.40.2"
+  "bugs": {
+    "url": "https://github.com/derweili/DerweiliStarterTheme/issues"
   },
+  "homepage": "https://github.com/derweili/DerweiliStarterTheme#readme",
   "devDependencies": {
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "webpack-cli": "^3.3.9"
+    "@wpackio/scripts": "^6.4.0",
+    "postcss": "^8.4.4",
+    "sass": "^1.44.0"
+  },
+  "dependencies": {
+    "@wpackio/entrypoint": "^6.4.0",
+    "svgo": "^2.8.0",
+    "svgo-loader": "^3.0.0"
   }
 }

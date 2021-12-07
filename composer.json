@@ -1,0 +1,19 @@
+{
+    "name": "derweili/starter-theme",
+    "type": "wordpress-theme",
+    "license": "GPL2+",
+    "authors": [
+        {
+            "name": "derweili",
+            "email": "jw@derweili.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Derweili\\StarterTheme\\": "inc/"
+        }
+    },
+    "require": {
+        "wpackio/enqueue": "^3.4"
+    }
+}
